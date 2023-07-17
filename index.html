@@ -17,13 +17,19 @@
       font-family: 'Papyrus', sans-serif;
     }
 
-    h1 {
-      font-family: Wingdings, sans-serif;
+    .title-container {
+      text-align: center;
       margin-top: 20px;
+    }
+
+    .title {
+      font-family: Wingdings, sans-serif;
+      font-size: 24px;
     }
 
     .button-container {
       text-align: center;
+      margin-top: 20px;
     }
 
     .button {
@@ -49,7 +55,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>BEWARE THE MAN WHO SPEAKS IN HANDS</h1>
+  <div class="title-container">
+    <h1 class="title">BEWARE THE MAN WHO SPEAKS IN HANDS</h1>
+  </div>
   <div class="button-container">
     <button class="button" onclick="showMessage()">Click me!</button>
     <p id="message" class="message">Want to play Terraria?</p>
