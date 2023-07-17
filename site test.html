@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blue Button Website</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f1f1f1;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: blue;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .message {
+      display: none;
+      margin-top: 20px;
+      font-size: 20px;
+      color: blue;
+    }
+  </style>
+  <script>
+    function showMessage() {
+      var messageElement = document.getElementById("message");
+      messageElement.style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <button class="button" onclick="showMessage()">Click me!</button>
+  <p id="message" class="message">Want to play Terraria?</p>
+</body>
+</html>
