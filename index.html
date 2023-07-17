@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blue Button Website</title>
+  <title>BEWARE THE MAN WHO SPEAKS IN HANDS</title>
   <style>
     body {
       display: flex;
@@ -9,7 +9,18 @@
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background-color: #f1f1f1;
+      background-image: url("/ezgif.com-video-to-gif.gif");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    h1 {
+      font-family: Wingdings, sans-serif;
+    }
+
+    .button-container {
+      text-align: center;
     }
 
     .button {
@@ -20,6 +31,7 @@
       border-radius: 5px;
       cursor: pointer;
       font-size: 16px;
+      font-family: "Press Start 2P", sans-serif;
     }
 
     .message {
@@ -27,8 +39,10 @@
       margin-top: 20px;
       font-size: 20px;
       color: blue;
+      font-family: "Press Start 2P", sans-serif;
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <script>
     function showMessage() {
       var messageElement = document.getElementById("message");
@@ -37,7 +51,10 @@
   </script>
 </head>
 <body>
-  <button class="button" onclick="showMessage()">Click me!</button>
-  <p id="message" class="message">Want to play Terraria?</p>
+  <h1>BEWARE THE MAN WHO SPEAKS IN HANDS</h1>
+  <div class="button-container">
+    <button class="button" onclick="showMessage()">Click me!</button>
+    <p id="message" class="message">Want to play Terraria?</p>
+  </div>
 </body>
 </html>
